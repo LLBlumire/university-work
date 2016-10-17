@@ -2,8 +2,11 @@
 
 /// Entry point
 int main(void) {
-    printf("Hello World\nAnother line I guess\n"); // Creates instance of standard output, locks it,
-                                                   // and writes to it
-    printf("This one done with a seperate statement\n"); // More lines printed
+    // Creates an instance of stdin, locks it, and writes to it, writing two lines
+    printf("Hello World\nAnother line I guess\n");
+    // Adds another line 
+    printf("This one done with a seperate statement\n"); 
 
+    // Error code 0, all OK
+    returrn 0; 
 }
