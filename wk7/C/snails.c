@@ -10,19 +10,26 @@ void secminsec( uint32_t sec, uint32_t* omin, uint32_t* osec ) {
 
 /// Nicely output a time
 void puttime( uint32_t mins, uint32_t secs ) {
-    printf("%u ", mins);
-    if (mins == 1) {
-        fputs("minute ", stdout);
-    } else {
-        fputs("minutes ", stdout);
+    if (mins != 0) {
+        fprintf(stdout, "%u ", mins);
+        if (mins == 1) {
+            fputs("minute", stdout);
+        } else {
+            fputs("minutes", stdout);
+        }
     }
-    printf("and %u ", secs);
-    if (secs == 1) {
-        fputs("second.", stdout);
-    } else {
-        fputs("seconds.", stdout);
+    if (secs != 0) {
+        if (mins != 0) {
+            fputs(" and ", stdout);
+        }
+        fprintf(stdout, "%u ", secs);
+        if (secs == 1) {
+            fputs("second", stdout);
+        } else {
+            fputs("seconds", stdout);
+        }
     }
-    puts("");
+    puts(".");
 }
 
 int main(void) {
@@ -65,7 +72,7 @@ int main(void) {
             legs[sumcount][4] += legs[sumcount][legcount];
         }
         secminsec(legs[sumcount][4], &mins, &secs);
-        fprintf(stdout, "Snail %lu \"%s\" took ", sumcount+1, snails[sumcount]);
+        fprintf(stdout, "Snail %zu \"%s\" took ", sumcount+1, snails[sumcount]);
         puttime(mins, secs);
     }
 
@@ -86,7 +93,7 @@ int main(void) {
         // Update output times
         secminsec(fastestspeeds[legcount], &mins, &secs);
         if (legcount != 4) {
-            fprintf(stdout, "The fastest time for leg %lu was set by snail %u \"%s\" as ", 
+            fprintf(stdout, "The fastest time for leg %zu was set by snail %u \"%s\" as ", 
                     legcount+1, fastestsnail[legcount]+1, snails[fastestsnail[legcount]]);
         } else {
             fprintf(stdout, "The fastest overall time was set by snail %u \"%s\" as", 
