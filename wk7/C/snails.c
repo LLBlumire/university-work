@@ -48,7 +48,7 @@ int main(void) {
         fscanf(stdin, "%u %u %u %u", 
                 &legs[count][0], 
                 &legs[count][1], 
-                &legs[count][2], 
+                &legs[count][2],
                 &legs[count][3]);
 
         // If it's not going to end anyway, check if they are done entering
