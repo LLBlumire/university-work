@@ -1,3 +1,6 @@
+/* book.cpp
+ * See book.h for method documentation
+ */
 #include "book.h"
 #include <iostream>
 

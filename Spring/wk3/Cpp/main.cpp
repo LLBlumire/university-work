@@ -1,3 +1,9 @@
+/* main.cpp
+ * Tests a system designed to model stacks of books
+ *
+ * @author Lucille Blumire <lucy@llblumire.co.uk>
+ * @version 1.0 2017-01-21
+ */
 #include <iostream>
 #include <string>
 
