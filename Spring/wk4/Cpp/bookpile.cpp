@@ -5,7 +5,7 @@
 #include "bookpile.hpp"
 #include "catch.hpp"
 #include "category.hpp"
-#include <iostream>
+#include <ostream>
 #include <sstream>
 #include <utility>
 #include <vector>
@@ -31,7 +31,7 @@ std::pair<bool, Book> BookPile::GetNextBook() {
     if (this->GetNumBooks() > 0) {
         return std::pair<bool, Book>(true, this->books.back());
     } else {
-        return std::pair<bool, Book>(false, Book("", "", (Category)-1));
+        return EMPTY_BOOK_OPT;
     }
 }
 

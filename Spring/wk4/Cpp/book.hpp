@@ -29,10 +29,15 @@ class Book {
          */
         Category category;
 
-        /* Book()
+        /* Book(title, author, category)
          * Constructor
          */
         Book(std::string title, std::string author, Category category);
+
+        /* Book()
+         * Empty Constructor
+         */
+        Book();
 
         /* Format()
          * Formats the book nicely for output.
@@ -59,5 +64,7 @@ class Book {
          */
         bool operator!=(const Book& other) const;
 };
+
+const std::pair<bool, Book> EMPTY_BOOK_OPT = std::pair<bool, Book>(false, Book());
 
 #endif

@@ -5,7 +5,6 @@
 #include "category.hpp"
 #include "catch.hpp"
 #include <string>
-#include <iostream>
 #include <ostream>
 
 Book::Book(std::string title, std::string author, Category category) {
@@ -13,6 +12,13 @@ Book::Book(std::string title, std::string author, Category category) {
     this->author = author;
     this->category = category;
 }
+
+Book::Book() {
+    this->title = "";
+    this->author = "";
+    this->category = (Category)-1;
+}
+
 
 std::string Book::Format(void) {
     return "\"" + this->title + "\" by " + this->author;
