@@ -1,0 +1,304 @@
+\hypertarget{classmaze_1_1Cell}{}\section{maze\+:\+:Cell$<$ T $>$ Class Template Reference}
+\label{classmaze_1_1Cell}\index{maze\+::\+Cell$<$ T $>$@{maze\+::\+Cell$<$ T $>$}}
+
+
+A safe wrapper around a pointer to a \hyperlink{classmaze_1_1RawCell}{Raw\+Cell}.  
+
+
+
+
+{\ttfamily \#include $<$maze.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmaze_1_1Cell_a33cfcdd0d72cc870c85e62852faaf530}\label{classmaze_1_1Cell_a33cfcdd0d72cc870c85e62852faaf530}} 
+typedef T \hyperlink{classmaze_1_1Cell_a33cfcdd0d72cc870c85e62852faaf530}{type}
+\begin{DoxyCompactList}\small\item\em A type alias for the stored type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmaze_1_1Cell_af62f7d677daf7ccd54313843dd2297b1}{Cell} (\hyperlink{classmaze_1_1RawCell}{Raw\+Cell}$<$ \hyperlink{classmaze_1_1Cell_a33cfcdd0d72cc870c85e62852faaf530}{type} $>$ $\ast$\hyperlink{classmaze_1_1Cell_abc349a9368caf134c164e3c79f71881d}{cell}, \hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Cell_acb30c995ef7274e0641f7ec3fbb4f81d}{pos\+\_\+x}, \hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Cell_ae9c8a0cedd27a418ebf6ae53e8ad3e7c}{pos\+\_\+y}, \hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Cell_a84373a5689d96f09edafb242d29ab305}{bound\+\_\+x}, \hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Cell_a59f029039ae6e046d36966ff52109b46}{bound\+\_\+y})
+\begin{DoxyCompactList}\small\item\em Constructs a new wrapper around a cell, from a \hyperlink{classmaze_1_1RawCell}{Raw\+Cell}, its position, and its bounds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Cell_ae4932173d3ff8937edd5915600a43226}\label{classmaze_1_1Cell_ae4932173d3ff8937edd5915600a43226}} 
+\hyperlink{classmaze_1_1Cell_a33cfcdd0d72cc870c85e62852faaf530}{type} $\ast$ \hyperlink{classmaze_1_1Cell_ae4932173d3ff8937edd5915600a43226}{data} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the data stored in the cell. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Cell_ad3f0f0bc988195f1b6e21700bb973598}\label{classmaze_1_1Cell_ad3f0f0bc988195f1b6e21700bb973598}} 
+bool \hyperlink{classmaze_1_1Cell_ad3f0f0bc988195f1b6e21700bb973598}{is\+\_\+null} ()
+\begin{DoxyCompactList}\small\item\em Checks if the target \hyperlink{classmaze_1_1Cell}{Cell} is a null pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Cell_a6893b4512b070791eed9d4b122b89c5a}\label{classmaze_1_1Cell_a6893b4512b070791eed9d4b122b89c5a}} 
+\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Cell_a6893b4512b070791eed9d4b122b89c5a}{get\+\_\+pos\+\_\+x} ()
+\begin{DoxyCompactList}\small\item\em Getter method for pos\+\_\+x. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Cell_ac1e9b7aa026f3491f806576ac8ac2c0d}\label{classmaze_1_1Cell_ac1e9b7aa026f3491f806576ac8ac2c0d}} 
+\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Cell_ac1e9b7aa026f3491f806576ac8ac2c0d}{get\+\_\+pos\+\_\+y} ()
+\begin{DoxyCompactList}\small\item\em Getter method for pos\+\_\+y. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Cell_ab9fa33c182f42fe351c5f6ccf6dde58f}\label{classmaze_1_1Cell_ab9fa33c182f42fe351c5f6ccf6dde58f}} 
+\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Cell_ab9fa33c182f42fe351c5f6ccf6dde58f}{get\+\_\+bound\+\_\+x} ()
+\begin{DoxyCompactList}\small\item\em Getter method for bound\+\_\+x. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Cell_a7a00ea115675a8ff05823eb42cffa9f2}\label{classmaze_1_1Cell_a7a00ea115675a8ff05823eb42cffa9f2}} 
+\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Cell_a7a00ea115675a8ff05823eb42cffa9f2}{get\+\_\+bound\+\_\+y} ()
+\begin{DoxyCompactList}\small\item\em Getter method for bound\+\_\+y. \end{DoxyCompactList}\item 
+bool \hyperlink{classmaze_1_1Cell_a3635bc71ff51d6dee9220817955bbb5d}{get\+\_\+north} ()
+\begin{DoxyCompactList}\small\item\em Getter method for north. \end{DoxyCompactList}\item 
+bool \hyperlink{classmaze_1_1Cell_a1e56e5f417f35081cfed62d6346937f5}{get\+\_\+east} ()
+\begin{DoxyCompactList}\small\item\em Getter method for east. \end{DoxyCompactList}\item 
+bool \hyperlink{classmaze_1_1Cell_aa3d4aabbfb3434fa30dac654c34a78c1}{get\+\_\+south} ()
+\begin{DoxyCompactList}\small\item\em Getter method for south. \end{DoxyCompactList}\item 
+bool \hyperlink{classmaze_1_1Cell_a40b00cc592c00c60c6749289b8a6c9c9}{get\+\_\+west} ()
+\begin{DoxyCompactList}\small\item\em Getter method for west. \end{DoxyCompactList}\item 
+bool \hyperlink{classmaze_1_1Cell_a22debec3d758aa08384bdbd1e92cb632}{set\+\_\+north} (bool)
+\begin{DoxyCompactList}\small\item\em Setter method for north. \end{DoxyCompactList}\item 
+bool \hyperlink{classmaze_1_1Cell_a34f010ee5f165f0c253d6bed6c9a99da}{set\+\_\+east} (bool)
+\begin{DoxyCompactList}\small\item\em Setter method for east. \end{DoxyCompactList}\item 
+bool \hyperlink{classmaze_1_1Cell_ac42f810920a1c85ec3600ebcc16cdec9}{set\+\_\+south} (bool)
+\begin{DoxyCompactList}\small\item\em Setter method for south. \end{DoxyCompactList}\item 
+bool \hyperlink{classmaze_1_1Cell_a7b0d55a391d32b61abe0cc411a2c5efc}{set\+\_\+west} (bool)
+\begin{DoxyCompactList}\small\item\em Setter method for west. \end{DoxyCompactList}\item 
+\hyperlink{classmaze_1_1Cell}{Cell} \hyperlink{classmaze_1_1Cell_ac157da293a04b48cfb0503ecb7697e16}{at\+\_\+north} ()
+\begin{DoxyCompactList}\small\item\em Returns the north adjacent \hyperlink{classmaze_1_1Cell}{Cell}. \end{DoxyCompactList}\item 
+\hyperlink{classmaze_1_1Cell}{Cell} \hyperlink{classmaze_1_1Cell_a4445101be1c13235cc8fe3a6b247cce2}{at\+\_\+east} ()
+\begin{DoxyCompactList}\small\item\em Returns the east adjacent \hyperlink{classmaze_1_1Cell}{Cell}. \end{DoxyCompactList}\item 
+\hyperlink{classmaze_1_1Cell}{Cell} \hyperlink{classmaze_1_1Cell_a3b188f082fad9e2d67fe044d80889936}{at\+\_\+south} ()
+\begin{DoxyCompactList}\small\item\em Returns the south adjacent \hyperlink{classmaze_1_1Cell}{Cell}. \end{DoxyCompactList}\item 
+\hyperlink{classmaze_1_1Cell}{Cell} \hyperlink{classmaze_1_1Cell_a4080c57302de14134648c386f3798428}{at\+\_\+west} ()
+\begin{DoxyCompactList}\small\item\em Returns the west adjacent \hyperlink{classmaze_1_1Cell}{Cell}. \end{DoxyCompactList}\item 
+bool \hyperlink{classmaze_1_1Cell_ad7a2a4199240e33f5eca151e5ad123be}{to\+\_\+north} ()
+\begin{DoxyCompactList}\small\item\em Mutates cell in place to be its north neighbour. \end{DoxyCompactList}\item 
+bool \hyperlink{classmaze_1_1Cell_a995ff6967a9fe6a8ece294172b6c1d9d}{to\+\_\+east} ()
+\begin{DoxyCompactList}\small\item\em Mutates cell in place to be its east neighbour. \end{DoxyCompactList}\item 
+bool \hyperlink{classmaze_1_1Cell_ad9ad8cbb20515ba73c92544adb3cdafd}{to\+\_\+south} ()
+\begin{DoxyCompactList}\small\item\em Mutates cell in place to be its south neighbour. \end{DoxyCompactList}\item 
+bool \hyperlink{classmaze_1_1Cell_a388cb1fd37b00e05980c08ef55b82748}{to\+\_\+west} ()
+\begin{DoxyCompactList}\small\item\em Mutates cell in place to be its west neighbour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmaze_1_1Cell_abc349a9368caf134c164e3c79f71881d}\label{classmaze_1_1Cell_abc349a9368caf134c164e3c79f71881d}} 
+\hyperlink{classmaze_1_1RawCell}{Raw\+Cell}$<$ \hyperlink{classmaze_1_1Cell_a33cfcdd0d72cc870c85e62852faaf530}{type} $>$ $\ast$ \hyperlink{classmaze_1_1Cell_abc349a9368caf134c164e3c79f71881d}{cell}
+\begin{DoxyCompactList}\small\item\em The underlying \hyperlink{classmaze_1_1RawCell}{Raw\+Cell}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Cell_acb30c995ef7274e0641f7ec3fbb4f81d}\label{classmaze_1_1Cell_acb30c995ef7274e0641f7ec3fbb4f81d}} 
+\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Cell_acb30c995ef7274e0641f7ec3fbb4f81d}{pos\+\_\+x}
+\begin{DoxyCompactList}\small\item\em The x position in the maze. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Cell_ae9c8a0cedd27a418ebf6ae53e8ad3e7c}\label{classmaze_1_1Cell_ae9c8a0cedd27a418ebf6ae53e8ad3e7c}} 
+\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Cell_ae9c8a0cedd27a418ebf6ae53e8ad3e7c}{pos\+\_\+y}
+\begin{DoxyCompactList}\small\item\em The y position in the maze. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Cell_a84373a5689d96f09edafb242d29ab305}\label{classmaze_1_1Cell_a84373a5689d96f09edafb242d29ab305}} 
+\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Cell_a84373a5689d96f09edafb242d29ab305}{bound\+\_\+x}
+\begin{DoxyCompactList}\small\item\em The x boundry of the maze. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Cell_a59f029039ae6e046d36966ff52109b46}\label{classmaze_1_1Cell_a59f029039ae6e046d36966ff52109b46}} 
+\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Cell_a59f029039ae6e046d36966ff52109b46}{bound\+\_\+y}
+\begin{DoxyCompactList}\small\item\em The y boundry of the maze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class maze\+::\+Cell$<$ T $>$}
+
+A safe wrapper around a pointer to a \hyperlink{classmaze_1_1RawCell}{Raw\+Cell}. 
+
+Provides getter and setter methods. \hyperlink{classmaze_1_1Cell}{Cell} is invalidated if \hyperlink{classmaze_1_1Maze}{Maze} goes out of scope. 
+
+Definition at line \hyperlink{maze_8hpp_source_l00077}{77} of file \hyperlink{maze_8hpp_source}{maze.\+hpp}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmaze_1_1Cell_af62f7d677daf7ccd54313843dd2297b1}\label{classmaze_1_1Cell_af62f7d677daf7ccd54313843dd2297b1}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{Cell()}{Cell()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::\hyperlink{classmaze_1_1Cell}{Cell} (\begin{DoxyParamCaption}\item[{\hyperlink{classmaze_1_1RawCell}{Raw\+Cell}$<$ \hyperlink{classmaze_1_1Cell_a33cfcdd0d72cc870c85e62852faaf530}{type} $>$ $\ast$}]{cell,  }\item[{\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index}}]{pos\+\_\+x,  }\item[{\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index}}]{pos\+\_\+y,  }\item[{\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index}}]{bound\+\_\+x,  }\item[{\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index}}]{bound\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a new wrapper around a cell, from a \hyperlink{classmaze_1_1RawCell}{Raw\+Cell}, its position, and its bounds. 
+
+The \hyperlink{classmaze_1_1RawCell}{Raw\+Cell} should be the \hyperlink{classmaze_1_1RawCell}{Raw\+Cell} being Wrapped, not the \hyperlink{classmaze_1_1RawCell}{Raw\+Cell} at the start of the \hyperlink{classmaze_1_1Maze}{Maze}\textquotesingle{}s memory. 
+
+Definition at line \hyperlink{maze_8hpp_source_l00089}{89} of file \hyperlink{maze_8hpp_source}{maze.\+hpp}.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmaze_1_1Cell_a4445101be1c13235cc8fe3a6b247cce2}\label{classmaze_1_1Cell_a4445101be1c13235cc8fe3a6b247cce2}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!at\+\_\+east@{at\+\_\+east}}
+\index{at\+\_\+east@{at\+\_\+east}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{at\+\_\+east()}{at\_east()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classmaze_1_1Cell}{Cell} \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::at\+\_\+east (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the east adjacent \hyperlink{classmaze_1_1Cell}{Cell}. 
+
+Target \hyperlink{classmaze_1_1RawCell}{Raw\+Cell} will be null if done at a boundry. \mbox{\Hypertarget{classmaze_1_1Cell_ac157da293a04b48cfb0503ecb7697e16}\label{classmaze_1_1Cell_ac157da293a04b48cfb0503ecb7697e16}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!at\+\_\+north@{at\+\_\+north}}
+\index{at\+\_\+north@{at\+\_\+north}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{at\+\_\+north()}{at\_north()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classmaze_1_1Cell}{Cell} \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::at\+\_\+north (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the north adjacent \hyperlink{classmaze_1_1Cell}{Cell}. 
+
+Target \hyperlink{classmaze_1_1RawCell}{Raw\+Cell} will be null if done at a boundry. \mbox{\Hypertarget{classmaze_1_1Cell_a3b188f082fad9e2d67fe044d80889936}\label{classmaze_1_1Cell_a3b188f082fad9e2d67fe044d80889936}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!at\+\_\+south@{at\+\_\+south}}
+\index{at\+\_\+south@{at\+\_\+south}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{at\+\_\+south()}{at\_south()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classmaze_1_1Cell}{Cell} \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::at\+\_\+south (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the south adjacent \hyperlink{classmaze_1_1Cell}{Cell}. 
+
+Target \hyperlink{classmaze_1_1RawCell}{Raw\+Cell} will be null if done at a boundry. \mbox{\Hypertarget{classmaze_1_1Cell_a4080c57302de14134648c386f3798428}\label{classmaze_1_1Cell_a4080c57302de14134648c386f3798428}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!at\+\_\+west@{at\+\_\+west}}
+\index{at\+\_\+west@{at\+\_\+west}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{at\+\_\+west()}{at\_west()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classmaze_1_1Cell}{Cell} \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::at\+\_\+west (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the west adjacent \hyperlink{classmaze_1_1Cell}{Cell}. 
+
+Target \hyperlink{classmaze_1_1RawCell}{Raw\+Cell} will be null if done at a boundry. \mbox{\Hypertarget{classmaze_1_1Cell_a1e56e5f417f35081cfed62d6346937f5}\label{classmaze_1_1Cell_a1e56e5f417f35081cfed62d6346937f5}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!get\+\_\+east@{get\+\_\+east}}
+\index{get\+\_\+east@{get\+\_\+east}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{get\+\_\+east()}{get\_east()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::get\+\_\+east (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for east. 
+
+Returns false if out of bounds, regardless of underlying value. \mbox{\Hypertarget{classmaze_1_1Cell_a3635bc71ff51d6dee9220817955bbb5d}\label{classmaze_1_1Cell_a3635bc71ff51d6dee9220817955bbb5d}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!get\+\_\+north@{get\+\_\+north}}
+\index{get\+\_\+north@{get\+\_\+north}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{get\+\_\+north()}{get\_north()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::get\+\_\+north (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for north. 
+
+Returns false if out of bounds, regardless of underlying value. \mbox{\Hypertarget{classmaze_1_1Cell_aa3d4aabbfb3434fa30dac654c34a78c1}\label{classmaze_1_1Cell_aa3d4aabbfb3434fa30dac654c34a78c1}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!get\+\_\+south@{get\+\_\+south}}
+\index{get\+\_\+south@{get\+\_\+south}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{get\+\_\+south()}{get\_south()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::get\+\_\+south (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for south. 
+
+Returns false if out of bounds, regardless of underlying value. \mbox{\Hypertarget{classmaze_1_1Cell_a40b00cc592c00c60c6749289b8a6c9c9}\label{classmaze_1_1Cell_a40b00cc592c00c60c6749289b8a6c9c9}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!get\+\_\+west@{get\+\_\+west}}
+\index{get\+\_\+west@{get\+\_\+west}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{get\+\_\+west()}{get\_west()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::get\+\_\+west (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for west. 
+
+Returns false if out of bounds, regardless of underlying value. \mbox{\Hypertarget{classmaze_1_1Cell_a34f010ee5f165f0c253d6bed6c9a99da}\label{classmaze_1_1Cell_a34f010ee5f165f0c253d6bed6c9a99da}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!set\+\_\+east@{set\+\_\+east}}
+\index{set\+\_\+east@{set\+\_\+east}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{set\+\_\+east()}{set\_east()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::set\+\_\+east (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})}
+
+
+
+Setter method for east. 
+
+Returns false if out of bounds. \mbox{\Hypertarget{classmaze_1_1Cell_a22debec3d758aa08384bdbd1e92cb632}\label{classmaze_1_1Cell_a22debec3d758aa08384bdbd1e92cb632}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!set\+\_\+north@{set\+\_\+north}}
+\index{set\+\_\+north@{set\+\_\+north}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{set\+\_\+north()}{set\_north()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::set\+\_\+north (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})}
+
+
+
+Setter method for north. 
+
+Returns false if out of bounds. \mbox{\Hypertarget{classmaze_1_1Cell_ac42f810920a1c85ec3600ebcc16cdec9}\label{classmaze_1_1Cell_ac42f810920a1c85ec3600ebcc16cdec9}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!set\+\_\+south@{set\+\_\+south}}
+\index{set\+\_\+south@{set\+\_\+south}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{set\+\_\+south()}{set\_south()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::set\+\_\+south (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})}
+
+
+
+Setter method for south. 
+
+Returns false if out of bounds. \mbox{\Hypertarget{classmaze_1_1Cell_a7b0d55a391d32b61abe0cc411a2c5efc}\label{classmaze_1_1Cell_a7b0d55a391d32b61abe0cc411a2c5efc}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!set\+\_\+west@{set\+\_\+west}}
+\index{set\+\_\+west@{set\+\_\+west}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{set\+\_\+west()}{set\_west()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::set\+\_\+west (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})}
+
+
+
+Setter method for west. 
+
+Returns false if out of bounds. \mbox{\Hypertarget{classmaze_1_1Cell_a995ff6967a9fe6a8ece294172b6c1d9d}\label{classmaze_1_1Cell_a995ff6967a9fe6a8ece294172b6c1d9d}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!to\+\_\+east@{to\+\_\+east}}
+\index{to\+\_\+east@{to\+\_\+east}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{to\+\_\+east()}{to\_east()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::to\+\_\+east (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mutates cell in place to be its east neighbour. 
+
+Returns false and does not change if at a boundry. \mbox{\Hypertarget{classmaze_1_1Cell_ad7a2a4199240e33f5eca151e5ad123be}\label{classmaze_1_1Cell_ad7a2a4199240e33f5eca151e5ad123be}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!to\+\_\+north@{to\+\_\+north}}
+\index{to\+\_\+north@{to\+\_\+north}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{to\+\_\+north()}{to\_north()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::to\+\_\+north (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mutates cell in place to be its north neighbour. 
+
+Returns false and does not change if at a boundry. \mbox{\Hypertarget{classmaze_1_1Cell_ad9ad8cbb20515ba73c92544adb3cdafd}\label{classmaze_1_1Cell_ad9ad8cbb20515ba73c92544adb3cdafd}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!to\+\_\+south@{to\+\_\+south}}
+\index{to\+\_\+south@{to\+\_\+south}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{to\+\_\+south()}{to\_south()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::to\+\_\+south (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mutates cell in place to be its south neighbour. 
+
+Returns false and does not change if at a boundry. \mbox{\Hypertarget{classmaze_1_1Cell_a388cb1fd37b00e05980c08ef55b82748}\label{classmaze_1_1Cell_a388cb1fd37b00e05980c08ef55b82748}} 
+\index{maze\+::\+Cell@{maze\+::\+Cell}!to\+\_\+west@{to\+\_\+west}}
+\index{to\+\_\+west@{to\+\_\+west}!maze\+::\+Cell@{maze\+::\+Cell}}
+\subsubsection{\texorpdfstring{to\+\_\+west()}{to\_west()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classmaze_1_1Cell}{maze\+::\+Cell}$<$ T $>$\+::to\+\_\+west (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mutates cell in place to be its west neighbour. 
+
+Returns false and does not change if at a boundry. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+maze.\+hpp\end{DoxyCompactItemize}

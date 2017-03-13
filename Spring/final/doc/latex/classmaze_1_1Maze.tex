@@ -1,0 +1,133 @@
+\hypertarget{classmaze_1_1Maze}{}\section{maze\+:\+:Maze$<$ T $>$ Class Template Reference}
+\label{classmaze_1_1Maze}\index{maze\+::\+Maze$<$ T $>$@{maze\+::\+Maze$<$ T $>$}}
+
+
+A maze.  
+
+
+
+
+{\ttfamily \#include $<$maze.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmaze_1_1Maze_a9f056be7a10507d578e4608e31a3d6fc}\label{classmaze_1_1Maze_a9f056be7a10507d578e4608e31a3d6fc}} 
+typedef T \hyperlink{classmaze_1_1Maze_a9f056be7a10507d578e4608e31a3d6fc}{type}
+\begin{DoxyCompactList}\small\item\em A type alias for the stored type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmaze_1_1Maze_aef611081ed7197864535e22586a58ff7}{Maze} (\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Maze_a4b7e051645e4dfd8d06ba7f4a0c0a6f4}{size\+\_\+x}, \hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Maze_af00b31bf815cb59847190984da46bd87}{size\+\_\+y})
+\begin{DoxyCompactList}\small\item\em Creates a new \hyperlink{classmaze_1_1Maze}{Maze} from size. \end{DoxyCompactList}\item 
+\hyperlink{classmaze_1_1Maze_a43bdce0a7eca808b51174a005c5840c4}{Maze} (\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Maze_a4b7e051645e4dfd8d06ba7f4a0c0a6f4}{size\+\_\+x}, \hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Maze_af00b31bf815cb59847190984da46bd87}{size\+\_\+y}, \hyperlink{classmaze_1_1RawCell}{Raw\+Cell}$<$ \hyperlink{classmaze_1_1Maze_a9f056be7a10507d578e4608e31a3d6fc}{type} $>$ init)
+\begin{DoxyCompactList}\small\item\em Creates a new \hyperlink{classmaze_1_1Maze}{Maze} from size and a template. \end{DoxyCompactList}\item 
+\hyperlink{classmaze_1_1Maze_a703176967ecf07e5a2de6fc28f1cfa04}{Maze} (\hyperlink{classmaze_1_1RawCell}{Raw\+Cell}$<$ \hyperlink{classmaze_1_1Maze_a9f056be7a10507d578e4608e31a3d6fc}{type} $>$ $\ast$\hyperlink{classmaze_1_1Maze_ae538f5777c03216dddbdbd8da5623ca9}{cell}, \hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Maze_a4b7e051645e4dfd8d06ba7f4a0c0a6f4}{size\+\_\+x}, \hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Maze_af00b31bf815cb59847190984da46bd87}{size\+\_\+y})
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classmaze_1_1Maze}{Maze} from its raw parts. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Maze_a7da6ceefb06d25ef546e1512e6baa684}\label{classmaze_1_1Maze_a7da6ceefb06d25ef546e1512e6baa684}} 
+\hyperlink{classmaze_1_1Maze_a7da6ceefb06d25ef546e1512e6baa684}{$\sim$\+Maze} ()
+\begin{DoxyCompactList}\small\item\em Deallocates the memory reserved for the cells of the maze. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Maze_ad4575b2541d3838c2ece35be9a2ba71a}\label{classmaze_1_1Maze_ad4575b2541d3838c2ece35be9a2ba71a}} 
+\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Maze_ad4575b2541d3838c2ece35be9a2ba71a}{get\+\_\+size\+\_\+x} ()
+\begin{DoxyCompactList}\small\item\em Getter for size\+\_\+x. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Maze_a3ec42515fd665b1225944e806cd0c739}\label{classmaze_1_1Maze_a3ec42515fd665b1225944e806cd0c739}} 
+\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Maze_a3ec42515fd665b1225944e806cd0c739}{get\+\_\+size\+\_\+y} ()
+\begin{DoxyCompactList}\small\item\em Getter for size\+\_\+y. \end{DoxyCompactList}\item 
+\hyperlink{classmaze_1_1Cell}{Cell}$<$ \hyperlink{classmaze_1_1Maze_a9f056be7a10507d578e4608e31a3d6fc}{type} $>$ \hyperlink{classmaze_1_1Maze_ae538f5777c03216dddbdbd8da5623ca9}{cell} (\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} pos\+\_\+x, \hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} pos\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Creates and returns a \hyperlink{classmaze_1_1Cell}{Cell} given the indexes of that cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmaze_1_1RawCell}{Raw\+Cell}$<$ \hyperlink{classmaze_1_1Maze_a9f056be7a10507d578e4608e31a3d6fc}{type} $>$ $\ast$ \hyperlink{classmaze_1_1Maze_acafe6a6b48339133143ec0ddd7119bcf}{cells}
+\begin{DoxyCompactList}\small\item\em The raw cells that make up the maze. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Maze_a4b7e051645e4dfd8d06ba7f4a0c0a6f4}\label{classmaze_1_1Maze_a4b7e051645e4dfd8d06ba7f4a0c0a6f4}} 
+\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Maze_a4b7e051645e4dfd8d06ba7f4a0c0a6f4}{size\+\_\+x}
+\begin{DoxyCompactList}\small\item\em The size of the mazes x dimension. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1Maze_af00b31bf815cb59847190984da46bd87}\label{classmaze_1_1Maze_af00b31bf815cb59847190984da46bd87}} 
+\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index} \hyperlink{classmaze_1_1Maze_af00b31bf815cb59847190984da46bd87}{size\+\_\+y}
+\begin{DoxyCompactList}\small\item\em The size of the mazes y dimension. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class maze\+::\+Maze$<$ T $>$}
+
+A maze. 
+
+Stores size, and controls memory of elements. A maze can be seen as a potentially disconnected bidirected 2d lattice graph. 
+
+Definition at line \hyperlink{maze_8hpp_source_l00259}{259} of file \hyperlink{maze_8hpp_source}{maze.\+hpp}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmaze_1_1Maze_aef611081ed7197864535e22586a58ff7}\label{classmaze_1_1Maze_aef611081ed7197864535e22586a58ff7}} 
+\index{maze\+::\+Maze@{maze\+::\+Maze}!Maze@{Maze}}
+\index{Maze@{Maze}!maze\+::\+Maze@{maze\+::\+Maze}}
+\subsubsection{\texorpdfstring{Maze()}{Maze()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{classmaze_1_1Maze}{maze\+::\+Maze}$<$ T $>$\+::\hyperlink{classmaze_1_1Maze}{Maze} (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index}}]{size\+\_\+x,  }\item[{\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index}}]{size\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Creates a new \hyperlink{classmaze_1_1Maze}{Maze} from size. 
+
+Allocates memory and initalizes fully blocked cells. \mbox{\Hypertarget{classmaze_1_1Maze_a43bdce0a7eca808b51174a005c5840c4}\label{classmaze_1_1Maze_a43bdce0a7eca808b51174a005c5840c4}} 
+\index{maze\+::\+Maze@{maze\+::\+Maze}!Maze@{Maze}}
+\index{Maze@{Maze}!maze\+::\+Maze@{maze\+::\+Maze}}
+\subsubsection{\texorpdfstring{Maze()}{Maze()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{classmaze_1_1Maze}{maze\+::\+Maze}$<$ T $>$\+::\hyperlink{classmaze_1_1Maze}{Maze} (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index}}]{size\+\_\+x,  }\item[{\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index}}]{size\+\_\+y,  }\item[{\hyperlink{classmaze_1_1RawCell}{Raw\+Cell}$<$ \hyperlink{classmaze_1_1Maze_a9f056be7a10507d578e4608e31a3d6fc}{type} $>$}]{init }\end{DoxyParamCaption})}
+
+
+
+Creates a new \hyperlink{classmaze_1_1Maze}{Maze} from size and a template. 
+
+Allocates memory and initalizes fully with coppies of a supplied cell. \mbox{\Hypertarget{classmaze_1_1Maze_a703176967ecf07e5a2de6fc28f1cfa04}\label{classmaze_1_1Maze_a703176967ecf07e5a2de6fc28f1cfa04}} 
+\index{maze\+::\+Maze@{maze\+::\+Maze}!Maze@{Maze}}
+\index{Maze@{Maze}!maze\+::\+Maze@{maze\+::\+Maze}}
+\subsubsection{\texorpdfstring{Maze()}{Maze()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{classmaze_1_1Maze}{maze\+::\+Maze}$<$ T $>$\+::\hyperlink{classmaze_1_1Maze}{Maze} (\begin{DoxyParamCaption}\item[{\hyperlink{classmaze_1_1RawCell}{Raw\+Cell}$<$ \hyperlink{classmaze_1_1Maze_a9f056be7a10507d578e4608e31a3d6fc}{type} $>$ $\ast$}]{cell,  }\item[{\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index}}]{size\+\_\+x,  }\item[{\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index}}]{size\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Creates a \hyperlink{classmaze_1_1Maze}{Maze} from its raw parts. 
+
+Takes \char`\"{}ownership\char`\"{} of {\ttfamily cells} and will deallocate it when it\textquotesingle{}s destructor is called. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmaze_1_1Maze_ae538f5777c03216dddbdbd8da5623ca9}\label{classmaze_1_1Maze_ae538f5777c03216dddbdbd8da5623ca9}} 
+\index{maze\+::\+Maze@{maze\+::\+Maze}!cell@{cell}}
+\index{cell@{cell}!maze\+::\+Maze@{maze\+::\+Maze}}
+\subsubsection{\texorpdfstring{cell()}{cell()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{classmaze_1_1Cell}{Cell}$<$\hyperlink{classmaze_1_1Maze_a9f056be7a10507d578e4608e31a3d6fc}{type}$>$ \hyperlink{classmaze_1_1Maze}{maze\+::\+Maze}$<$ T $>$\+::cell (\begin{DoxyParamCaption}\item[{\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index}}]{pos\+\_\+x,  }\item[{\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index}}]{pos\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Creates and returns a \hyperlink{classmaze_1_1Cell}{Cell} given the indexes of that cell. 
+
+\hyperlink{classmaze_1_1Cell}{Cell} is invalidated when maze is destructured. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmaze_1_1Maze_acafe6a6b48339133143ec0ddd7119bcf}\label{classmaze_1_1Maze_acafe6a6b48339133143ec0ddd7119bcf}} 
+\index{maze\+::\+Maze@{maze\+::\+Maze}!cells@{cells}}
+\index{cells@{cells}!maze\+::\+Maze@{maze\+::\+Maze}}
+\subsubsection{\texorpdfstring{cells}{cells}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{classmaze_1_1RawCell}{Raw\+Cell}$<$\hyperlink{classmaze_1_1Maze_a9f056be7a10507d578e4608e31a3d6fc}{type}$>$$\ast$ \hyperlink{classmaze_1_1Maze}{maze\+::\+Maze}$<$ T $>$\+::cells\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The raw cells that make up the maze. 
+
+Stored continuously in memory. This is deallocated at the point of maze destruction. 
+
+Definition at line \hyperlink{maze_8hpp_source_l00310}{310} of file \hyperlink{maze_8hpp_source}{maze.\+hpp}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+maze.\+hpp\end{DoxyCompactItemize}

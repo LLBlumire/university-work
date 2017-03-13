@@ -1,0 +1,13 @@
+\hypertarget{main_8cpp_source}{}\section{main.\+cpp}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#include <iostream>}
+00002 \textcolor{preprocessor}{#include "maze.hpp"}
+00003 
+00004 \textcolor{keywordtype}{int} main(\textcolor{keywordtype}{void}) \{
+00005     \hyperlink{classmaze_1_1RawCell}{maze::RawCell<int>} my\_cell(4);
+00006     std::cout << my\_cell.north << std::endl;
+00007     my\_cell.north = \textcolor{keyword}{true};
+00008     std::cout << my\_cell.north << std::endl;
+00009 \}
+\end{DoxyCode}

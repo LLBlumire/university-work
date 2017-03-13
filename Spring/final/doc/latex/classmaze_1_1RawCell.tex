@@ -1,0 +1,61 @@
+\hypertarget{classmaze_1_1RawCell}{}\section{maze\+:\+:Raw\+Cell$<$ T $>$ Class Template Reference}
+\label{classmaze_1_1RawCell}\index{maze\+::\+Raw\+Cell$<$ T $>$@{maze\+::\+Raw\+Cell$<$ T $>$}}
+
+
+A single cell in a maze.  
+
+
+
+
+{\ttfamily \#include $<$maze.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmaze_1_1RawCell_afa8fb78a3cb15c45b86c391f2e821ee5}\label{classmaze_1_1RawCell_afa8fb78a3cb15c45b86c391f2e821ee5}} 
+typedef T \hyperlink{classmaze_1_1RawCell_afa8fb78a3cb15c45b86c391f2e821ee5}{type}
+\begin{DoxyCompactList}\small\item\em A type alias for the stored type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmaze_1_1RawCell_aabcb711ffb2b40524313ea274044a3db}\label{classmaze_1_1RawCell_aabcb711ffb2b40524313ea274044a3db}} 
+\hyperlink{classmaze_1_1RawCell_aabcb711ffb2b40524313ea274044a3db}{Raw\+Cell} (\hyperlink{classmaze_1_1RawCell_afa8fb78a3cb15c45b86c391f2e821ee5}{type} \hyperlink{classmaze_1_1RawCell_ab53141e2127b27d217709977d6bf720c}{data})
+\begin{DoxyCompactList}\small\item\em Creates a new \hyperlink{classmaze_1_1RawCell}{Raw\+Cell$<$type$>$} with no exits. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1RawCell_a3afb3e58715ce01011ab24d8a4f2f5f6}\label{classmaze_1_1RawCell_a3afb3e58715ce01011ab24d8a4f2f5f6}} 
+\hyperlink{classmaze_1_1RawCell_a3afb3e58715ce01011ab24d8a4f2f5f6}{Raw\+Cell} (\hyperlink{classmaze_1_1RawCell_afa8fb78a3cb15c45b86c391f2e821ee5}{type} \hyperlink{classmaze_1_1RawCell_ab53141e2127b27d217709977d6bf720c}{data}, bool \hyperlink{classmaze_1_1RawCell_afb8695c6c64f2c94eaa5b27453261452}{north}, bool \hyperlink{classmaze_1_1RawCell_a01804787461c5ae6aac0460a0170d6d9}{east}, bool \hyperlink{classmaze_1_1RawCell_adefd71aa8e04a6dd4fa7b9d788a2da24}{south}, bool \hyperlink{classmaze_1_1RawCell_a02eea7dcdf8ff0708b71d2c95ed928e1}{west})
+\begin{DoxyCompactList}\small\item\em Creates a new \hyperlink{classmaze_1_1RawCell}{Raw\+Cell$<$type$>$} with specified exits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmaze_1_1RawCell_ab53141e2127b27d217709977d6bf720c}\label{classmaze_1_1RawCell_ab53141e2127b27d217709977d6bf720c}} 
+\hyperlink{classmaze_1_1RawCell_afa8fb78a3cb15c45b86c391f2e821ee5}{type} \hyperlink{classmaze_1_1RawCell_ab53141e2127b27d217709977d6bf720c}{data}
+\begin{DoxyCompactList}\small\item\em The data stored inside the cell. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1RawCell_afb8695c6c64f2c94eaa5b27453261452}\label{classmaze_1_1RawCell_afb8695c6c64f2c94eaa5b27453261452}} 
+bool \hyperlink{classmaze_1_1RawCell_afb8695c6c64f2c94eaa5b27453261452}{north}
+\begin{DoxyCompactList}\small\item\em Legal to exit to the north. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1RawCell_a01804787461c5ae6aac0460a0170d6d9}\label{classmaze_1_1RawCell_a01804787461c5ae6aac0460a0170d6d9}} 
+bool \hyperlink{classmaze_1_1RawCell_a01804787461c5ae6aac0460a0170d6d9}{east}
+\begin{DoxyCompactList}\small\item\em Legal to exit to the east. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1RawCell_adefd71aa8e04a6dd4fa7b9d788a2da24}\label{classmaze_1_1RawCell_adefd71aa8e04a6dd4fa7b9d788a2da24}} 
+bool \hyperlink{classmaze_1_1RawCell_adefd71aa8e04a6dd4fa7b9d788a2da24}{south}
+\begin{DoxyCompactList}\small\item\em Legal to exit to the south. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmaze_1_1RawCell_a02eea7dcdf8ff0708b71d2c95ed928e1}\label{classmaze_1_1RawCell_a02eea7dcdf8ff0708b71d2c95ed928e1}} 
+bool \hyperlink{classmaze_1_1RawCell_a02eea7dcdf8ff0708b71d2c95ed928e1}{west}
+\begin{DoxyCompactList}\small\item\em Legal to exit to the west. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class maze\+::\+Raw\+Cell$<$ T $>$}
+
+A single cell in a maze. 
+
+It models both the data stored in the cell and the legal exits of the cell. 
+
+Definition at line \hyperlink{maze_8hpp_source_l00021}{21} of file \hyperlink{maze_8hpp_source}{maze.\+hpp}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+maze.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,147 @@
+\hypertarget{maze_8hpp_source}{}\section{maze.\+hpp}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef MAZE\_H\_INCL}
+00002 \textcolor{preprocessor}{#define MAZE\_H\_INCL}
+00003 
+00004 \textcolor{preprocessor}{#include<cstddef>}
+00005 
+\Hypertarget{maze_8hpp_source_l00011}\hyperlink{namespacemaze}{00011} \textcolor{keyword}{namespace }\hyperlink{namespacemaze}{maze} \{
+\Hypertarget{maze_8hpp_source_l00015}\hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{00015}     \textcolor{keyword}{typedef} std::size\_t \hyperlink{namespacemaze_ae8120a098fabafbbfa264a3c619640b3}{index};
+00016 
+\Hypertarget{maze_8hpp_source_l00021}\hyperlink{classmaze_1_1RawCell}{00021}     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T> \textcolor{keyword}{class }\hyperlink{classmaze_1_1RawCell}{RawCell} \{
+00022     \textcolor{keyword}{public}:
+\Hypertarget{maze_8hpp_source_l00026}\hyperlink{classmaze_1_1RawCell_afa8fb78a3cb15c45b86c391f2e821ee5}{00026}         \textcolor{keyword}{typedef} T \hyperlink{classmaze_1_1RawCell_afa8fb78a3cb15c45b86c391f2e821ee5}{type};
+00027 
+\Hypertarget{maze_8hpp_source_l00031}\hyperlink{classmaze_1_1RawCell_aabcb711ffb2b40524313ea274044a3db}{00031}         \hyperlink{classmaze_1_1RawCell_aabcb711ffb2b40524313ea274044a3db}{RawCell}(type \hyperlink{classmaze_1_1RawCell_ab53141e2127b27d217709977d6bf720c}{data}) \{
+00032             *\textcolor{keyword}{this} = \hyperlink{classmaze_1_1RawCell_aabcb711ffb2b40524313ea274044a3db}{RawCell}(data, \textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{false});
+00033         \}
+00034 
+\Hypertarget{maze_8hpp_source_l00038}\hyperlink{classmaze_1_1RawCell_a3afb3e58715ce01011ab24d8a4f2f5f6}{00038}         \hyperlink{classmaze_1_1RawCell_a3afb3e58715ce01011ab24d8a4f2f5f6}{RawCell}(type \hyperlink{classmaze_1_1RawCell_ab53141e2127b27d217709977d6bf720c}{data}, \textcolor{keywordtype}{bool} \hyperlink{classmaze_1_1RawCell_afb8695c6c64f2c94eaa5b27453261452}{north}, \textcolor{keywordtype}{bool} \hyperlink{classmaze_1_1RawCell_a01804787461c5ae6aac0460a0170d6d9}{east}, \textcolor{keywordtype}{bool} \hyperlink{classmaze_1_1RawCell_adefd71aa8e04a6dd4fa7b9d788a2da24}{south}, \textcolor{keywordtype}{bool} 
+      \hyperlink{classmaze_1_1RawCell_a02eea7dcdf8ff0708b71d2c95ed928e1}{west}) \{
+00039             this->data = \hyperlink{classmaze_1_1RawCell_ab53141e2127b27d217709977d6bf720c}{data};
+00040             this->north = \hyperlink{classmaze_1_1RawCell_afb8695c6c64f2c94eaa5b27453261452}{north};
+00041             this->east = \hyperlink{classmaze_1_1RawCell_a01804787461c5ae6aac0460a0170d6d9}{east};
+00042             this->south = \hyperlink{classmaze_1_1RawCell_adefd71aa8e04a6dd4fa7b9d788a2da24}{south};
+00043             this->west = \hyperlink{classmaze_1_1RawCell_a02eea7dcdf8ff0708b71d2c95ed928e1}{west};
+00044         \}
+00045 
+\Hypertarget{maze_8hpp_source_l00049}\hyperlink{classmaze_1_1RawCell_ab53141e2127b27d217709977d6bf720c}{00049}         type \hyperlink{classmaze_1_1RawCell_ab53141e2127b27d217709977d6bf720c}{data};
+00050 
+\Hypertarget{maze_8hpp_source_l00054}\hyperlink{classmaze_1_1RawCell_afb8695c6c64f2c94eaa5b27453261452}{00054}         \textcolor{keywordtype}{bool} \hyperlink{classmaze_1_1RawCell_afb8695c6c64f2c94eaa5b27453261452}{north};
+00055 
+\Hypertarget{maze_8hpp_source_l00059}\hyperlink{classmaze_1_1RawCell_a01804787461c5ae6aac0460a0170d6d9}{00059}         \textcolor{keywordtype}{bool} \hyperlink{classmaze_1_1RawCell_a01804787461c5ae6aac0460a0170d6d9}{east};
+00060 
+\Hypertarget{maze_8hpp_source_l00064}\hyperlink{classmaze_1_1RawCell_adefd71aa8e04a6dd4fa7b9d788a2da24}{00064}         \textcolor{keywordtype}{bool} \hyperlink{classmaze_1_1RawCell_adefd71aa8e04a6dd4fa7b9d788a2da24}{south};
+00065 
+\Hypertarget{maze_8hpp_source_l00069}\hyperlink{classmaze_1_1RawCell_a02eea7dcdf8ff0708b71d2c95ed928e1}{00069}         \textcolor{keywordtype}{bool} \hyperlink{classmaze_1_1RawCell_a02eea7dcdf8ff0708b71d2c95ed928e1}{west};
+00071     \};
+00072 
+\Hypertarget{maze_8hpp_source_l00077}\hyperlink{classmaze_1_1Cell}{00077}     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T> \textcolor{keyword}{class }\hyperlink{classmaze_1_1Cell}{Cell} \{
+00078     \textcolor{keyword}{public}:
+\Hypertarget{maze_8hpp_source_l00082}\hyperlink{classmaze_1_1Cell_a33cfcdd0d72cc870c85e62852faaf530}{00082}         \textcolor{keyword}{typedef} T \hyperlink{classmaze_1_1Cell_a33cfcdd0d72cc870c85e62852faaf530}{type};
+00083 
+\Hypertarget{maze_8hpp_source_l00089}\hyperlink{classmaze_1_1Cell_af62f7d677daf7ccd54313843dd2297b1}{00089}         \hyperlink{classmaze_1_1Cell_af62f7d677daf7ccd54313843dd2297b1}{Cell}(\hyperlink{classmaze_1_1RawCell}{RawCell<type>}* cell, index pos\_x, index pos\_y, index bound\_x,
+00090              index bound\_y) \{
+00091             this->cell = cell;
+00092             this->pos\_x = pos\_x;
+00093             this->pos\_y = pos\_y;
+00094             this->bound\_x = bound\_x;
+00095             this->bound\_y = bound\_y;
+00096         \}
+00097 
+\Hypertarget{maze_8hpp_source_l00101}\hyperlink{classmaze_1_1Cell_ae4932173d3ff8937edd5915600a43226}{00101}         type* \hyperlink{classmaze_1_1Cell_ae4932173d3ff8937edd5915600a43226}{data}() \{
+00102             \textcolor{keywordflow}{return} this->cell.data;
+00103         \}
+00104 
+\Hypertarget{maze_8hpp_source_l00108}\hyperlink{classmaze_1_1Cell_ad3f0f0bc988195f1b6e21700bb973598}{00108}         \textcolor{keywordtype}{bool} \hyperlink{classmaze_1_1Cell_ad3f0f0bc988195f1b6e21700bb973598}{is\_null}() \{
+00109             \textcolor{keywordflow}{return} this->cell == (\textcolor{keywordtype}{void}*)0;
+00110         \}
+00111 
+\Hypertarget{maze_8hpp_source_l00115}\hyperlink{classmaze_1_1Cell_a6893b4512b070791eed9d4b122b89c5a}{00115}         index \hyperlink{classmaze_1_1Cell_a6893b4512b070791eed9d4b122b89c5a}{get\_pos\_x}() \{
+00116             \textcolor{keywordflow}{return} this->pos\_x;
+00117         \}
+00118 
+\Hypertarget{maze_8hpp_source_l00122}\hyperlink{classmaze_1_1Cell_ac1e9b7aa026f3491f806576ac8ac2c0d}{00122}         index \hyperlink{classmaze_1_1Cell_ac1e9b7aa026f3491f806576ac8ac2c0d}{get\_pos\_y}() \{
+00123             \textcolor{keywordflow}{return} this->pos\_y;
+00124         \}
+00125 
+\Hypertarget{maze_8hpp_source_l00129}\hyperlink{classmaze_1_1Cell_ab9fa33c182f42fe351c5f6ccf6dde58f}{00129}         index \hyperlink{classmaze_1_1Cell_ab9fa33c182f42fe351c5f6ccf6dde58f}{get\_bound\_x}() \{
+00130             \textcolor{keywordflow}{return} this->bound\_x;
+00131         \}
+00132 
+\Hypertarget{maze_8hpp_source_l00136}\hyperlink{classmaze_1_1Cell_a7a00ea115675a8ff05823eb42cffa9f2}{00136}         index \hyperlink{classmaze_1_1Cell_a7a00ea115675a8ff05823eb42cffa9f2}{get\_bound\_y}() \{
+00137             \textcolor{keywordflow}{return} this->bound\_y;
+00138         \}
+00139 
+00144         \textcolor{keywordtype}{bool} get\_north();
+00145 
+00150         \textcolor{keywordtype}{bool} get\_east();
+00151 
+00155         \textcolor{keywordtype}{bool} get\_south();
+00156 
+00160         \textcolor{keywordtype}{bool} get\_west();
+00161 
+00165         \textcolor{keywordtype}{bool} set\_north(\textcolor{keywordtype}{bool});
+00166 
+00170         \textcolor{keywordtype}{bool} set\_east(\textcolor{keywordtype}{bool});
+00171 
+00175         \textcolor{keywordtype}{bool} set\_south(\textcolor{keywordtype}{bool});
+00176 
+00180         \textcolor{keywordtype}{bool} set\_west(\textcolor{keywordtype}{bool});
+00181 
+00186         \hyperlink{classmaze_1_1Cell}{Cell} at\_north();
+00187 
+00192         \hyperlink{classmaze_1_1Cell}{Cell} at\_east();
+00193 
+00198         \hyperlink{classmaze_1_1Cell}{Cell} at\_south();
+00199 
+00204         \hyperlink{classmaze_1_1Cell}{Cell} at\_west();
+00205 
+00210         \textcolor{keywordtype}{bool} to\_north();
+00211 
+00216         \textcolor{keywordtype}{bool} to\_east();
+00217 
+00222         \textcolor{keywordtype}{bool} to\_south();
+00223 
+00228         \textcolor{keywordtype}{bool} to\_west();
+00229 
+00230     \textcolor{keyword}{protected}:
+\Hypertarget{maze_8hpp_source_l00234}\hyperlink{classmaze_1_1Cell_abc349a9368caf134c164e3c79f71881d}{00234}         \hyperlink{classmaze_1_1RawCell}{RawCell<type>}* \hyperlink{classmaze_1_1Cell_abc349a9368caf134c164e3c79f71881d}{cell};
+00235 
+\Hypertarget{maze_8hpp_source_l00239}\hyperlink{classmaze_1_1Cell_acb30c995ef7274e0641f7ec3fbb4f81d}{00239}         index \hyperlink{classmaze_1_1Cell_acb30c995ef7274e0641f7ec3fbb4f81d}{pos\_x};
+\Hypertarget{maze_8hpp_source_l00243}\hyperlink{classmaze_1_1Cell_ae9c8a0cedd27a418ebf6ae53e8ad3e7c}{00243}         index \hyperlink{classmaze_1_1Cell_ae9c8a0cedd27a418ebf6ae53e8ad3e7c}{pos\_y};
+00244 
+\Hypertarget{maze_8hpp_source_l00248}\hyperlink{classmaze_1_1Cell_a84373a5689d96f09edafb242d29ab305}{00248}         index \hyperlink{classmaze_1_1Cell_a84373a5689d96f09edafb242d29ab305}{bound\_x};
+\Hypertarget{maze_8hpp_source_l00252}\hyperlink{classmaze_1_1Cell_a59f029039ae6e046d36966ff52109b46}{00252}         index \hyperlink{classmaze_1_1Cell_a59f029039ae6e046d36966ff52109b46}{bound\_y};
+00253     \};
+00254 
+\Hypertarget{maze_8hpp_source_l00259}\hyperlink{classmaze_1_1Maze}{00259}     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T> \textcolor{keyword}{class }\hyperlink{classmaze_1_1Maze}{Maze} \{
+00260     \textcolor{keyword}{public}:
+\Hypertarget{maze_8hpp_source_l00264}\hyperlink{classmaze_1_1Maze_a9f056be7a10507d578e4608e31a3d6fc}{00264}         \textcolor{keyword}{typedef} T \hyperlink{classmaze_1_1Maze_a9f056be7a10507d578e4608e31a3d6fc}{type};
+00265 
+00270         \hyperlink{classmaze_1_1Maze}{Maze}(index size\_x, index size\_y);
+00271 
+00276         \hyperlink{classmaze_1_1Maze}{Maze}(index size\_x, index size\_y, \hyperlink{classmaze_1_1RawCell}{RawCell<type>} init);
+00277 
+00282         \hyperlink{classmaze_1_1Maze}{Maze}(\hyperlink{classmaze_1_1RawCell}{RawCell<type>}* cell, index size\_x, index size\_y);
+00283 
+00287         ~\hyperlink{classmaze_1_1Maze}{Maze}();
+00288 
+00292         index get\_size\_x();
+00293 
+00297         index get\_size\_y();
+00298 
+00303         \hyperlink{classmaze_1_1Cell}{Cell<type>} cell(index pos\_x, index pos\_y);
+00304 
+00305     \textcolor{keyword}{protected}:
+\Hypertarget{maze_8hpp_source_l00310}\hyperlink{classmaze_1_1Maze_acafe6a6b48339133143ec0ddd7119bcf}{00310}         \hyperlink{classmaze_1_1RawCell}{RawCell<type>}* \hyperlink{classmaze_1_1Maze_acafe6a6b48339133143ec0ddd7119bcf}{cells};
+00311 
+\Hypertarget{maze_8hpp_source_l00315}\hyperlink{classmaze_1_1Maze_a4b7e051645e4dfd8d06ba7f4a0c0a6f4}{00315}         index \hyperlink{classmaze_1_1Maze_a4b7e051645e4dfd8d06ba7f4a0c0a6f4}{size\_x};
+00316 
+\Hypertarget{maze_8hpp_source_l00320}\hyperlink{classmaze_1_1Maze_af00b31bf815cb59847190984da46bd87}{00320}         index \hyperlink{classmaze_1_1Maze_af00b31bf815cb59847190984da46bd87}{size\_y};
+00321     \};
+00322 \}
+00323 
+00324 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

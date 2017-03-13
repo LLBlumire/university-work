@@ -1,0 +1,85 @@
+\begin{theindex}
+
+  \item {at\+\_\+east}
+    \subitem {maze\+::\+Cell}, \hyperpage{9}
+  \item {at\+\_\+north}
+    \subitem {maze\+::\+Cell}, \hyperpage{9}
+  \item {at\+\_\+south}
+    \subitem {maze\+::\+Cell}, \hyperpage{9}
+  \item {at\+\_\+west}
+    \subitem {maze\+::\+Cell}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Cell}
+    \subitem {maze\+::\+Cell}, \hyperpage{9}
+  \item {cell}
+    \subitem {maze\+::\+Maze}, \hyperpage{14}
+  \item {cells}
+    \subitem {maze\+::\+Maze}, \hyperpage{14}
+
+  \indexspace
+
+  \item {get\+\_\+east}
+    \subitem {maze\+::\+Cell}, \hyperpage{10}
+  \item {get\+\_\+north}
+    \subitem {maze\+::\+Cell}, \hyperpage{10}
+  \item {get\+\_\+south}
+    \subitem {maze\+::\+Cell}, \hyperpage{10}
+  \item {get\+\_\+west}
+    \subitem {maze\+::\+Cell}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Maze}
+    \subitem {maze\+::\+Maze}, \hyperpage{13, 14}
+  \item {maze}, \hyperpage{5}
+  \item {maze\+::\+Cell}
+    \subitem {at\+\_\+east}, \hyperpage{9}
+    \subitem {at\+\_\+north}, \hyperpage{9}
+    \subitem {at\+\_\+south}, \hyperpage{9}
+    \subitem {at\+\_\+west}, \hyperpage{9}
+    \subitem {Cell}, \hyperpage{9}
+    \subitem {get\+\_\+east}, \hyperpage{10}
+    \subitem {get\+\_\+north}, \hyperpage{10}
+    \subitem {get\+\_\+south}, \hyperpage{10}
+    \subitem {get\+\_\+west}, \hyperpage{10}
+    \subitem {set\+\_\+east}, \hyperpage{10}
+    \subitem {set\+\_\+north}, \hyperpage{11}
+    \subitem {set\+\_\+south}, \hyperpage{11}
+    \subitem {set\+\_\+west}, \hyperpage{11}
+    \subitem {to\+\_\+east}, \hyperpage{11}
+    \subitem {to\+\_\+north}, \hyperpage{11}
+    \subitem {to\+\_\+south}, \hyperpage{12}
+    \subitem {to\+\_\+west}, \hyperpage{12}
+  \item {maze\+::\+Cell$<$ T $>$}, \hyperpage{7}
+  \item {maze\+::\+Maze}
+    \subitem {cell}, \hyperpage{14}
+    \subitem {cells}, \hyperpage{14}
+    \subitem {Maze}, \hyperpage{13, 14}
+  \item {maze\+::\+Maze$<$ T $>$}, \hyperpage{12}
+  \item {maze\+::\+Raw\+Cell$<$ T $>$}, \hyperpage{15}
+
+  \indexspace
+
+  \item {set\+\_\+east}
+    \subitem {maze\+::\+Cell}, \hyperpage{10}
+  \item {set\+\_\+north}
+    \subitem {maze\+::\+Cell}, \hyperpage{11}
+  \item {set\+\_\+south}
+    \subitem {maze\+::\+Cell}, \hyperpage{11}
+  \item {set\+\_\+west}
+    \subitem {maze\+::\+Cell}, \hyperpage{11}
+
+  \indexspace
+
+  \item {to\+\_\+east}
+    \subitem {maze\+::\+Cell}, \hyperpage{11}
+  \item {to\+\_\+north}
+    \subitem {maze\+::\+Cell}, \hyperpage{11}
+  \item {to\+\_\+south}
+    \subitem {maze\+::\+Cell}, \hyperpage{12}
+  \item {to\+\_\+west}
+    \subitem {maze\+::\+Cell}, \hyperpage{12}
+
+\end{theindex}
